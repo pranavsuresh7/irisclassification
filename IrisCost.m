@@ -6,7 +6,7 @@ m=size(X,1);
  
  J=0;
  %regularized costfunction 
-J=(1/m)*sum(-y'*log(sigmoid(X*theta))-(1-y)'*log(1-sigmoid(X*theta))) +(lambda/(2*m))*sum((theta(2:length(theta))).*theta(2:length(theta)));
+ J=(1/m)*sum(-y'*log(sigmoid(X*theta))-(1-y)'*log(1-sigmoid(X*theta))) +(lambda/(2*m))*sum((theta(2:length(theta))).*theta(2:length(theta)));
 
  
 %grad as sam size as of theta
